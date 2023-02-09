@@ -7,14 +7,14 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
+    'prettier',
+    'plugin:prettier/recommended',
     'plugin:react-hooks/recommended',
   ],
   parserOptions: {},
-  plugins: ['react', 'simple-import-sort', 'react-hooks', 'import', '@typescript-eslint'],
+  plugins: ['react', 'prettier', 'simple-import-sort', 'react-hooks', 'import', '@typescript-eslint'],
   rules: {
-    indent: ['error', 2],
-    quotes: ['error', 'single'],
-    semi: ['error', 'always'],
+    'prettier/prettier': 'error',
     'sort-imports': 'off',
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',
