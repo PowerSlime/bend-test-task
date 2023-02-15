@@ -1,0 +1,19 @@
+@import "src/assets/variables";
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  gap: $gap;
+}
+
+.title {
+  font-size: 20px;
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $gap;
+}

@@ -1,0 +1,52 @@
+@import "src/assets/variables.scss";
+
+.table {
+  position: relative;
+  background: lighten($background-color, 15%);
+
+  width: 150px;
+  height: 75px;
+
+  border-radius: $border-radius;
+
+  .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+  }
+
+  .suffix {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+}
+
+.title {
+  font-size: 18px;
+}
+
+.suffix {
+  font-size: 12px;
+}
+
+.badge {
+  &:before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: calc(100% - 25px);
+
+    background: currentColor;
+
+    position: absolute;
+    left: 0;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    border-radius: 0 $border-radius $border-radius 0;
+  }
+}
